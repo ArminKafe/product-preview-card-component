@@ -1,0 +1,145 @@
+html {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  margin-left: 270px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.right {
+  background-color: hsl(0, 0%, 100%);
+  height: 595px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.left {
+  height: 595px;
+  width: 450px;
+}
+
+#product-img {
+  width: 450px;
+  height: 595px;
+  border-radius: 10px;
+}
+
+#perfume-text {
+  margin-left: 40px;
+  margin-top: 40px;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+#title-text {
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 43px;
+}
+
+#para-text {
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 16px;
+  color: hsl(228, 12%, 48%);
+}
+
+#price-tag {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: hsl(158, 36%, 37%);
+}
+
+#price-discount {
+  color: hsl(228, 12%, 48%);
+  margin-left: 200px;
+  margin-top: -50px;
+}
+
+.btn {
+  border: solid white;
+  margin-left: 45px;
+  margin-top: 20px;
+  width: 270px;
+  height: 65px;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: hsl(159, 49%, 19%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 90px;
+    height: auto;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  .right,
+  .left {
+    width: 400px;
+    height: auto;
+  }
+
+  #product-img {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  #perfume-text,
+  #title-text,
+  #para-text,
+  #price-tag {
+    margin-left: 15px;
+    margin-right: 40px;
+  }
+
+  .btn {
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  #price-discount {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 90px;
+    height: auto;
+    width: 350px;
+    border-radius: 10px;
+  }
+}
